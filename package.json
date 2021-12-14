@@ -12,8 +12,12 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "i": "^0.3.7",
     "node-fetch": "^2.6.5",
     "path": "^0.12.7",
+    "tnpm": "^1.0.8",
+    "ts-node": "^10.4.0",
+    "ts-npm": "0.0.1-security",
     "tsc": "^2.0.3"
   },
   "devDependencies": {

@@ -37,9 +37,9 @@ interface GU {
 	following: number;
 }
 ////////////////////////----------------------\\\\\\\\\\\\\\\\\\\\\\\\\
-const lanyard: string = 'https://api.lanyard.rest/v1/users/539843855567028227'
-const github: string = 'https://api.github.com/users/falsisdev'
-const repos: string = 'https://api.github.com/users/falsisdev/repos'
+const lanyard: string = 'https://api.lanyard.rest/v1/users/785054250677960737'
+const github: string = 'https://api.github.com/users/phoenix-rat'
+const repos: string = 'https://api.github.com/users/phoenix-rat/repos'
 const port: Port = {
 	port: 3000
 }
@@ -58,25 +58,25 @@ let checkActivities: any;
 ////////////////////////----------------------\\\\\\\\\\\\\\\\\\\\\\\\\
 app.get("/redirect/:name", function(req, res) {
 	if(req.params.name === "discord"){
-		res.redirect("https://discord.com/users/539843855567028227")
+		res.redirect("https://discord.com/users/785054250677960737")
 	}
 	if(req.params.name === "youtube"){
-		res.redirect("https://youtube.com/c/Falsis")
+		res.redirect("https://youtube.com/channel/UCWKLa96Cimi5GPiFRtJ5oYw")
 	}
 	if(req.params.name === "github"){
-		res.redirect("https://github.com/falsisdev")
+		res.redirect("https://github.com/phoenix-rat")
 	}
   if(req.params.name === "org"){
-    res.redirect("https://github.com/kremlindev")
+    res.redirect("https://github.com/PrismaDevelopment")
   }
 	if(req.params.name === "repo"){
-		res.redirect("https://github.com/falsisdev/site")
+		res.redirect("https://github.com/phoenix-rat/site")
 	}
 	if(!req.params.name){
 		res.send("Redirect failed")
 	}
 	if(req.params.name === "spotify"){
-	res.redirect("https://open.spotify.com/user/315l5ib3a4fd2obidm76lipspxji?si=fcf653d3bc0d4cb7")
+	res.redirect("https://open.spotify.com/user/cagan-ayin")
 }else{
 	res.redirect(req.params.name)
 }
